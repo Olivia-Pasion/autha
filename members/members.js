@@ -9,7 +9,7 @@ import { getUser, signOut } from '../services/members-service.js';
 // write handler functions
 async function handlePageLoad() {
     // *** get the user
-    const user = await getUser();
+    user = await getUser();
     // *** if there is a **not** user, redirect (use replace) to '../'
     if (!user) {
         window.location.replace('../');
